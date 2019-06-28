@@ -12,7 +12,6 @@ Table Name: product_integration (Optional)
 | product_id | `INTEGER` | Foreign Key to the purchased product (Optional) |
 | coupon | `VARCHAR` | A Randomly Generated key used to redeem the roles |
 | used | `BOOLEAN` | A bool to indicate if the coupon has already been used or not. Optional, could be stored on bot's database, included here for security purposes |
-| role_id | `BIGINT` | The role which will be assigned on redeeming the coupon |
 
 ## Format for coupon
 Coupon can be a hex token(4-8 bytes to keep it User-Friendly)
@@ -40,12 +39,7 @@ For verification of the user-inputted coupon
 ```
 
 #### Returns:
-```json
-{
-    "role_id": <ROLE_ID>,
-    "purchase_id": <PURCHASE_ID>   // Optional
-}
-```
+* `200`: Coupon exists in database and is valid/has not been used yet
 
 #### Raises:
 * `403`: Invalid client_id: Authorization Failed
@@ -133,6 +127,5 @@ Prefix = `!`
 1. Takes user input
 2. Hits the `/coupon/verify` endpoint with client_id and coupon
 3. If successful:
-    * Assign Role to the user
+    * Assign `Community/Verified` Role to the user
     * Hits the `/coupon/used` endpoint with client_id and coupon
-
