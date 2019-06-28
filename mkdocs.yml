@@ -1,0 +1,49 @@
+# Project information
+site_name: 'Product Integration'
+site_description: 'A Discord Bot for giving roles through coupons'
+site_author: 'AXVin'
+site_url: 'https://AXVin.github.io/client_project'
+
+# Repository
+repo_name: 'AXVin/client_project'
+repo_url: 'https://github.com/AXVin/client_project'
+
+
+
+# Copyright
+# copyright: 'Copyright &copy; 2019 - 2020 AXVin'
+
+nav:
+    - Home: index.md
+
+
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/AXVin'
+    - type: 'twitter'
+      link: 'https://twitter.com/_AXVin_'
+    - type: 'bitbucket'
+      link: 'https://bitbucket.org/AXVin'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
