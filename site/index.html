@@ -345,7 +345,7 @@
 <li>Check client_id and authorize (<code>403</code> if invalid)</li>
 <li>Query database (<code>404</code> if no record found)</li>
 <li>Check <code>used</code> field in row (<code>404</code> if used is True)</li>
-<li>Return the json response</li>
+<li>Return 200</li>
 </ol>
 <h3 id="post-couponused">POST <code>/coupon/used</code><a class="headerlink" href="#post-couponused" title="Permanent link">&para;</a></h3>
 <p>For turning the <code>used</code> field in database to True after successfully assigning roles</p>
@@ -375,6 +375,7 @@
 <li>Query database (<code>404</code> if no record found)</li>
 <li>Check <code>used</code> field in row (<code>404</code> if used is True)</li>
 <li>Sets <code>used</code> field in the database to True</li>
+<li>Return <code>200</code></li>
 </ol>
 <h1 id="discord-server-design">Discord Server Design<a class="headerlink" href="#discord-server-design" title="Permanent link">&para;</a></h1>
 <p>The discord server plan where the tournament will be held</p>

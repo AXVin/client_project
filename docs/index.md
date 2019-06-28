@@ -49,7 +49,7 @@ For verification of the user-inputted coupon
 1. Check client_id and authorize (`403` if invalid)
 2. Query database (`404` if no record found)
 3. Check `used` field in row (`404` if used is True)
-4. Return the json response
+4. Return 200
 
 
 ### POST `/coupon/used`
@@ -77,7 +77,7 @@ For turning the `used` field in database to True after successfully assigning ro
 2. Query database (`404` if no record found)
 3. Check `used` field in row (`404` if used is True)
 4. Sets `used` field in the database to True
-
+5. Return `200`
 
 # Discord Server Design
 The discord server plan where the tournament will be held
