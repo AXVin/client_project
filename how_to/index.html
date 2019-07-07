@@ -327,6 +327,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deleting-the-entire-database-of-coupons-and-batches" title="Deleting the entire database of coupons and batches" class="md-nav__link">
+    Deleting the entire database of coupons and batches
+  </a>
+  
+</li>
+      
       
       
       
@@ -403,6 +410,13 @@
         <li class="md-nav__item">
   <a href="#creating-coupons" title="Creating Coupons" class="md-nav__link">
     Creating Coupons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-the-entire-database-of-coupons-and-batches" title="Deleting the entire database of coupons and batches" class="md-nav__link">
+    Deleting the entire database of coupons and batches
   </a>
   
 </li>
@@ -490,8 +504,12 @@
 <li>Start the bot with <code>coupons run</code> command</li>
 </ul>
 <h2 id="creating-coupons">Creating Coupons<a class="headerlink" href="#creating-coupons" title="Permanent link">&para;</a></h2>
-<p>You can create coupons with the <code>coupons create</code> command.
---file-format defaults to csv
+<p>You can create coupons with the <code>coupons create</code> command.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each command creates a new batch</p>
+</div>
+<p>--file-format defaults to csv
 --output-path defaults to <code>./coupons/</code> directory</p>
 <div class="codehilite"><pre><span></span>$ coupons create --help
 Usage: coupons create [options]
@@ -506,7 +524,20 @@ Options:
 </pre></div>
 
 
-<p>For example:- <code>coupons create --amount 100</code></p>
+<p>For example:-</p>
+<ul>
+<li>Simple: <code>coupons create --amount 100</code> (Can omit the --amount part to start a prompt)</li>
+<li>Txt output: <code>coupons create -a 100 -f txt</code></li>
+<li>File on desktop: <code>coupons create -a 100 -o C:\Users\my_user\Desktop\</code></li>
+</ul>
+<p>File Path works on all operating systems</p>
+<p>All flags are optional and the order in which you put them doesn't matter</p>
+<h2 id="deleting-the-entire-database-of-coupons-and-batches">Deleting the entire database of coupons and batches<a class="headerlink" href="#deleting-the-entire-database-of-coupons-and-batches" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This action is irreversible and will delete EVERYTHING from the database</p>
+</div>
+<p>Run <code>coupons clear_database</code> in your terminal to clear the database</p>
                 
                   
                 
