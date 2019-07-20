@@ -2,7 +2,7 @@
 site_name: 'Product Integration'
 site_description: 'A Discord Bot for giving roles through coupons'
 site_author: 'AXVin'
-site_url: 'https://AXVin.github.io/client_project'
+site_url: 'https://axvin.tk/client_project'
 
 # Repository
 repo_name: 'AXVin/client_project'
@@ -11,10 +11,12 @@ repo_url: 'https://github.com/AXVin/client_project'
 
 
 # Copyright
-# copyright: 'Copyright &copy; 2019 - 2020 AXVin'
+copyright: 'Copyright &copy; 2019 - 2020 AXVin'
 
 nav:
     - Home: index.md
+    - New Plan: new_plan.md
+    - How To Use: how_to.md
 
 
 
@@ -38,7 +40,7 @@ extra:
       link: 'https://twitter.com/_AXVin_'
     - type: 'bitbucket'
       link: 'https://bitbucket.org/AXVin'
-
+  version: 1.0
 
 # Extensions
 markdown_extensions:

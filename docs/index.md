@@ -2,7 +2,7 @@
 This is the Plan Document for the Tournament and Product Integration
 
 # Database Design
-> SQL Database design
+> Best Suited Database Type: SQL
 
 Table Name: product_integration (Optional)
 
@@ -49,7 +49,7 @@ For verification of the user-inputted coupon
 1. Check client_id and authorize (`403` if invalid)
 2. Query database (`404` if no record found)
 3. Check `used` field in row (`404` if used is True)
-4. Return 200
+4. Return `200`
 
 
 ### POST `/coupon/used`
